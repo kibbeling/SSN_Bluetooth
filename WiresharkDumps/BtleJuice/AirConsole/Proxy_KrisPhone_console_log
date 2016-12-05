@@ -1,0 +1,20 @@
+etle@beetle-VirtualBottle:~$ sudo btlejuice -u 10.0.0.219 -w
+   ___ _   _       __        _          
+  / __\ |_| | ___  \ \ _   _(_) ___ ___ 
+ /__\// __| |/ _ \  \ \ | | | |/ __/ _ \
+/ \/  \ |_| |  __/\_/ / |_| | | (_|  __/
+\_____/\__|_|\___\___/ \__,_|_|\___\___|
+
+[i] Using proxy http://10.0.0.219:8000
+[i] Using interface hci0
+2016-12-05T14:10:03.781Z - info: successfully connected to proxy
+2016-12-05T14:10:15.533Z - info: proxy set up and ready to use =)
+2016-12-05T14:10:15.579Z - debug: start advertising
+2016-12-05T14:10:15.594Z - info: BTLE services registered
+2016-12-05T14:10:47.033Z - info: dummy: accepted connection from address: 7d:db:f0:d9:f7:96
+2016-12-05T14:10:47.190Z - info: [NOTIFY][00c957fb8f6f4e089acb000000000000][00c957fb8f6f4e089acb000000000010]
+2016-12-05T14:10:47.192Z - debug: register callback for 00c957fb8f6f4e089acb000000000000:00c957fb8f6f4e089acb000000000010
+2016-12-05T14:10:47.885Z - info: [READ][00c957fb8f6f4e089acb000000000000][00c957fb8f6f4e089acb000000000001]
+2016-12-05T14:10:48.710Z - error: cannot connect to proxy.
+beetle@beetle-VirtualBottle:~$ 
+

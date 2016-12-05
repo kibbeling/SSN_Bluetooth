@@ -1,0 +1,44 @@
+beetle@beetle-VirtualBottle:~$ sudo btlejuice-proxy
+[sudo] password for beetle: 
+Sorry, try again.
+[sudo] password for beetle: 
+[i] Using interface hci0
+[info] Server listening on port 8000
+[info] Client connected
+[i] Stopping current proxy.
+[i] Stopping current proxy.
+Configuring proxy ...
+[status] Acquiring target 02:ae:43:5b:4f:e6
+[info] Proxy successfully connected to the real device
+[info] Discovering services and characteristics ...
+[status] Proxy configured and ready to relay !
+^Cbeetle@beetle-VirtualBottle:~$ sudo btlejuice-proxy
+[i] Using interface hci0
+[info] Server listening on port 8000
+[info] Client connected
+^Cbeetle@beetle-VirtualBottle:~$ sudo btlejuice-proxy
+[i] Using interface hci0
+[info] Server listening on port 8000
+[info] Client connected
+[i] Stopping current proxy.
+Configuring proxy ...
+[status] Acquiring target 02:ae:43:5b:4f:e6
+[info] Proxy successfully connected to the real device
+[info] Discovering services and characteristics ...
+[status] Proxy configured and ready to relay !
+buffer.js:816
+    throw new RangeError('Index out of range');
+    ^
+
+RangeError: Index out of range
+    at checkOffset (buffer.js:816:11)
+    at Buffer.readUInt16LE (buffer.js:862:5)
+    at Gatt.<anonymous> (/usr/local/lib/node_modules/btlejuice/node_modules/noble/lib/hci-socket/gatt.js:625:24)
+    at Gatt.onAclStreamData (/usr/local/lib/node_modules/btlejuice/node_modules/noble/lib/hci-socket/gatt.js:132:26)
+    at emitTwo (events.js:111:20)
+    at AclStream.emit (events.js:191:7)
+    at AclStream.push (/usr/local/lib/node_modules/btlejuice/node_modules/noble/lib/hci-socket/acl-stream.js:35:10)
+    at NobleBindings.onAclDataPkt (/usr/local/lib/node_modules/btlejuice/node_modules/noble/lib/hci-socket/bindings.js:272:15)
+    at emitThree (events.js:116:13)
+    at Hci.emit (events.js:194:7)
+
