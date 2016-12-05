@@ -1,0 +1,13 @@
+^Cazismer@desktop-29:~/Software/node-v6.9.1-linux-x64$ sudo btlejuice-proxy 
+[i] Using interface hci0
+[info] Server listening on port 8000
+[info] Client connected
+[i] Stopping current proxy.
+Configuring proxy ...
+[status] Acquiring target 01:ac:78:e7:2a:85
+[info] Proxy successfully connected to the real device
+[info] Discovering services and characteristics ...
+[status] Proxy configured and ready to relay !
+[error] Remote device has just disconnected
+[i] Stopping current proxy.
+[warning] client disconnected
