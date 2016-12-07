@@ -1,0 +1,53 @@
+===== CORE =====
+
+root@desktop-29:~/tmp# btlejuice -i 1 -u 10.0.0.223 -w
+   ___ _   _       __        _          
+  / __\ |_| | ___  \ \ _   _(_) ___ ___ 
+ /__\// __| |/ _ \  \ \ | | | |/ __/ _ \
+/ \/  \ |_| |  __/\_/ / |_| | | (_|  __/
+\_____/\__|_|\___\___/ \__,_|_|\___\___|
+
+[i] Using proxy http://10.0.0.223:8000
+[i] Using interface hci1
+2016-12-07T13:31:10.034Z - info: successfully connected to proxy
+2016-12-07T13:31:24.582Z - info: proxy set up and ready to use =)
+2016-12-07T13:31:24.598Z - debug: start advertising
+2016-12-07T13:31:24.605Z - info: BTLE services registered
+2016-12-07T13:31:39.511Z - info: dummy: accepted connection from address: 6e:1d:96:40:a1:0e
+2016-12-07T13:31:40.288Z - info: [READ][180a][2a50]
+2016-12-07T13:31:40.963Z - info: [READ][1812][2a4b]
+2016-12-07T13:31:41.300Z - info: [READ][1812][2a4a]
+2016-12-07T13:31:50.683Z - info: [NOTIFY][180f][2a19]
+2016-12-07T13:31:50.683Z - debug: register callback for 180f:2a19
+2016-12-07T13:31:50.818Z - info: [READ][180f][2a19]
+2016-12-07T13:31:50.855Z - debug: Data notification for service 180f and charac. 2a19 (ble_data)
+2016-12-07T13:31:50.882Z - debug: Data notification for service 180f and charac. 2a19 (proxy_data)
+2016-12-07T13:31:50.882Z - info: !! [180f:2a19]>> 64
+2016-12-07T13:32:12.089Z - debug: Data notification for service 180f and charac. 2a19 (ble_data)
+2016-12-07T13:32:12.113Z - debug: Data notification for service 180f and charac. 2a19 (proxy_data)
+2016-12-07T13:32:12.113Z - info: !! [180f:2a19]>> 5b
+2016-12-07T13:33:44.760Z - info: [WRITE][1812][2a4c]
+
+
+===== PROXY =====
+root@beetle-VirtualBottle:~# btlejuice-proxy 
+[i] Using interface hci0
+[info] Server listening on port 8000
+[info] Client connected
+Configuring proxy ...
+[status] Acquiring target cc:b9:62:35:04:64
+[info] Proxy successfully connected to the real device
+[info] Discovering services and characteristics ...
+[status] Proxy configured and ready to relay !
+[warning] client disconnected
+^Croot@beetle-VirtualBottle:~# btlejuice-proxy 
+[i] Using interface hci0
+[info] Server listening on port 8000
+[info] Client connected
+Configuring proxy ...
+[status] Acquiring target cc:b9:62:36:04:64
+[info] Proxy successfully connected to the real device
+[info] Discovering services and characteristics ...
+[status] Proxy configured and ready to relay !
+[warning] client disconnected
+
