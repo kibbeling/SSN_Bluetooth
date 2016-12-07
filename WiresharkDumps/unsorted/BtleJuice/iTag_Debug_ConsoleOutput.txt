@@ -1,0 +1,50 @@
+
+====== PROXY ======
+
+root@beetle-VirtualBottle:/usr/local/bin# debug=* btlejuice-proxy 
+[i] Using interface hci0
+[info] Server listening on port 8000
+[info] Client connected
+[i] Stopping current proxy.
+Configuring proxy ...
+[status] Acquiring target 01:ac:78:e7:2a:85
+[info] Proxy successfully connected to the real device
+[info] Discovering services and characteristics ...
+[status] Proxy configured and ready to relay !
+[error] Remote device has just disconnected
+[i] Stopping current proxy.
+
+
+====== CORE ======
+
+root@desktop-29:/usr/local/bin# debug=* btlejuice -u 10.0.0.223 -w
+   ___ _   _       __        _          
+  / __\ |_| | ___  \ \ _   _(_) ___ ___ 
+ /__\// __| |/ _ \  \ \ | | | |/ __/ _ \
+/ \/  \ |_| |  __/\_/ / |_| | | (_|  __/
+\_____/\__|_|\___\___/ \__,_|_|\___\___|
+
+[i] Using proxy http://10.0.0.223:8000
+[i] Using interface hci0
+2016-12-07T10:05:16.811Z - info: successfully connected to proxy
+2016-12-07T10:05:26.477Z - info: proxy set up and ready to use =)
+2016-12-07T10:05:26.493Z - debug: start advertising
+2016-12-07T10:05:26.499Z - info: BTLE services registered
+2016-12-07T10:05:27.036Z - info: dummy: accepted connection from address: 4c:61:4c:2e:c4:55
+2016-12-07T10:05:29.642Z - info: [NOTIFY][180f][2a19]
+2016-12-07T10:05:29.642Z - debug: register callback for 180f:2a19
+2016-12-07T10:05:29.912Z - info: [NOTIFY][ffe0][ffe1]
+2016-12-07T10:05:29.912Z - debug: register callback for ffe0:ffe1
+2016-12-07T10:05:30.182Z - info: [NOTIFY][1804][2a07]
+2016-12-07T10:05:30.182Z - debug: register callback for 1804:2a07
+2016-12-07T10:05:30.317Z - info: [READ][180f][2a19]				<--- the previous attempt disconnected after this line
+2016-12-07T10:05:30.379Z - debug: Data notification for service 180f and charac. 2a19 (ble_data)
+2016-12-07T10:05:30.518Z - debug: Data notification for service 180f and charac. 2a19 (proxy_data)
+2016-12-07T10:05:30.519Z - info: !! [180f:2a19]>> 64
+2016-12-07T10:05:37.810Z - info: [WRITE][1802][2a06]
+2016-12-07T10:05:37.877Z - info: [WRITE][1802][2a06]
+2016-12-07T10:05:39.405Z - warn: remote device has disconnected.
+2016-12-07T10:05:39.499Z - info: dummy: disconnected from address: 4c:61:4c:2e:c4:55
+
+
+
